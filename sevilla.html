@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sevilla, una ciudad con historia</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #263238;
+      background: #f5f2eb;
+    }
+    header {
+      padding: 58px 20px;
+      text-align: center;
+      color: white;
+      background: linear-gradient(135deg, #8d3329, #d17b45);
+    }
+    header h1 { margin: 0 0 10px; font-size: clamp(2.2rem, 6vw, 3.8rem); }
+    header p { margin: 0; font-size: 1.1rem; }
+    main { width: min(900px, 92%); margin: 35px auto; }
+    section {
+      margin-bottom: 28px;
+      padding: 26px;
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 5px 18px rgba(0,0,0,.07);
+    }
+    h2 { color: #963e30; margin-top: 0; }
+    .photo {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .video {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 10px;
+      background: #222;
+    }
+    .video iframe { width: 100%; height: 100%; border: 0; }
+    footer { padding: 20px; text-align: center; color: #fff; background: #263238; }
+    a { color: #963e30; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sevilla, una ciudad con historia</h1>
+    <p>Tradición, arte y vida a orillas del Guadalquivir</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Una ciudad para descubrir</h2>
+      <p>
+        Sevilla es una de las ciudades más emblemáticas de Andalucía. Su historia
+        se refleja en sus calles, plazas y monumentos, donde conviven huellas
+        romanas, islámicas y cristianas. La Giralda, la Catedral y el Real Alcázar
+        forman parte de un patrimonio que atrae a visitantes de todo el mundo.
+      </p>
+      <p>
+        Pasear por el barrio de Santa Cruz, cruzar el río hacia Triana o disfrutar
+        de la Plaza de España son algunas de las experiencias que permiten conocer
+        el carácter de la ciudad.
+      </p>
+    </section>
+
+    <section>
+      <h2>La Plaza de España</h2>
+      <p>
+        Construida para la Exposición Iberoamericana de 1929, la Plaza de España
+        es uno de los espacios más reconocibles de Sevilla. Su arquitectura,
+        sus puentes y el canal que la recorre la convierten en una visita imprescindible.
+      </p>
+      <img class="photo"
+        src="https://images.unsplash.com/photo-1559564484-e48b3e040ff4?auto=format&fit=crop&w=1400&q=85"
+        alt="Vista de la arquitectura monumental de Sevilla"
+        onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<p><em>La fotografía necesita conexión a Internet para cargarse.</em></p>')">
+      <p><small>La fotografía se carga desde Internet; no necesitas guardar ningún archivo de imagen.</small></p>
+    </section>
+
+    <section>
+      <h2>Sevilla en vídeo</h2>
+      <p>También puedes descubrir la ciudad a través de este vídeo:</p>
+      <div class="video">
+        <iframe
+          src="https://www.youtube.com/embed?listType=search&list=Sevilla%20Andaluc%C3%ADa%20turismo"
+          title="Vídeos sobre Sevilla"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p><small>El vídeo se reproduce desde YouTube y requiere conexión a Internet.</small></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Sevilla · Andalucía · España</p>
+  </footer>
+</body>
+</html>
